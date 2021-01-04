@@ -1,5 +1,4 @@
 package com.linkedlist.leetcode;
-
 public class RemoveLLElement203 {
   public ListNode removeElements(ListNode head, int val) {
 
@@ -11,11 +10,10 @@ public class RemoveLLElement203 {
     ListNode node1 = new ListNode(0);
     node1.next = head;
     ListNode result = node1;
-    while(node1 != null && node1.next != null){
-      if(val == node1.next.val){
+    while(node1 != null && node1.next != null) {
+      if (val == node1.next.val) {
         node1.next = node1.next.next;
-      }
-      else{
+      } else {
         node1 = node1.next;
       }
     }
