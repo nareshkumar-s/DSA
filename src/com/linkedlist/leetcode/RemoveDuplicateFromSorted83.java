@@ -25,7 +25,7 @@ public class RemoveDuplicateFromSorted83 {
     }
     return head;
   }
-  
+
     public ListNode deleteDuplicates(ListNode head) {
       ListNode headCopy = head;
       ListNode tempNode = new ListNode(-1);
